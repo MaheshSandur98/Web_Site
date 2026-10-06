@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechHub Laptop Store - laptops, gaming PCs, upgrades and repair services.">
+  <title>TechHub | Laptop & Gaming PC Store</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home"><span>TECH</span>HUB</a>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#laptops">Laptops</a>
+      <a href="#gaming">Gaming PCs</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cart-btn" id="cartButton" aria-label="Open cart">Cart <span id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuButton" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">LAPTOPS • GAMING • SERVICE</p>
+        <h1>Power your work.<br><span>Level up your game.</span></h1>
+        <p>Shop performance laptops, build your dream gaming PC, or book expert laptop servicing — all in one place.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#laptops">Shop Laptops</a>
+          <a class="btn secondary" href="#services">Book a Service</a>
+        </div>
+        <div class="stats">
+          <div><strong>500+</strong><span>Products</span></div>
+          <div><strong>2K+</strong><span>Happy Customers</span></div>
+          <div><strong>4.9/5</strong><span>Service Rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="laptop-art">
+          <div class="screen"><span>TECHHUB</span><small>PERFORMANCE UNLEASHED</small></div>
+          <div class="base"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <span>DELL</span><span>HP</span><span>LENOVO</span><span>ASUS</span><span>ACER</span><span>MSI</span>
+    </section>
+
+    <section class="section" id="laptops">
+      <div class="section-head">
+        <div><p class="eyebrow">FEATURED PRODUCTS</p><h2>Find your next laptop</h2></div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="work">Work</button>
+          <button class="filter" data-filter="gaming">Gaming</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="gaming-section" id="gaming">
+      <div class="gaming-copy">
+        <p class="eyebrow">CUSTOM GAMING PCS</p>
+        <h2>Built for serious performance.</h2>
+        <p>Choose the processor, GPU, RAM and storage. Our technicians assemble, test and optimize your system before delivery.</p>
+        <ul>
+          <li>✓ Latest NVIDIA & AMD graphics</li>
+          <li>✓ Performance-tested components</li>
+          <li>✓ Clean cable management</li>
+          <li>✓ Upgrade-friendly builds</li>
+        </ul>
+        <a href="#contact" class="btn primary">Request Custom Build</a>
+      </div>
+      <div class="pc-card">
+        <div class="pc-case">
+          <div class="fan f1"></div><div class="fan f2"></div><div class="fan f3"></div>
+          <div class="gpu">RTX</div>
+        </div>
+        <div class="pc-spec"><strong>TECHHUB X1</strong><span>Ryzen 7 • RTX Series • 32GB RAM</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="center-head">
+        <p class="eyebrow">TECHHUB CARE</p>
+        <h2>Laptop & PC Services</h2>
+        <p>Fast diagnostics, transparent pricing and professional repairs.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><div class="icon">⚙</div><h3>Laptop Repair</h3><p>Diagnosis and repair for boot, display, battery, keyboard and hardware problems.</p><span>From ₹499</span></article>
+        <article class="service-card"><div class="icon">↗</div><h3>RAM / SSD Upgrade</h3><p>Improve startup time and multitasking with compatible memory and SSD upgrades.</p><span>From ₹799</span></article>
+        <article class="service-card"><div class="icon">❄</div><h3>Cleaning & Thermal</h3><p>Internal dust cleaning, fan service and thermal paste replacement.</p><span>From ₹599</span></article>
+        <article class="service-card"><div class="icon">▣</div><h3>Gaming PC Service</h3><p>Troubleshooting, component upgrades, cable management and performance checks.</p><span>From ₹999</span></article>
+      </div>
+      <div class="booking">
+        <div><p class="eyebrow">NEED A REPAIR?</p><h3>Book a service appointment</h3><p>Tell us the issue and we'll contact you with the next steps.</p></div>
+        <form id="serviceForm">
+          <input required placeholder="Your name">
+          <input required type="email" placeholder="Email address">
+          <select required><option value="">Select service</option><option>Laptop Repair</option><option>RAM / SSD Upgrade</option><option>Cleaning & Thermal Service</option><option>Gaming PC Service</option></select>
+          <textarea required placeholder="Describe the issue"></textarea>
+          <button class="btn primary" type="submit">Book Service</button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div><p class="eyebrow">WHY TECHHUB</p><h2>Technology you can rely on.</h2></div>
+      <div class="benefits">
+        <div><strong>01</strong><h3>Quality Products</h3><p>Carefully selected laptops and components from trusted brands.</p></div>
+        <div><strong>02</strong><h3>Expert Support</h3><p>Practical advice for choosing, upgrading and maintaining your machine.</p></div>
+        <div><strong>03</strong><h3>Secure Shopping</h3><p>A foundation ready for payment, authentication and cloud integration.</p></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="center-head"><p class="eyebrow">CONTACT</p><h2>Let's talk technology</h2><p>This is sample content. Replace it with your real business information.</p></div>
+      <div class="contact-box">
+        <div><small>EMAIL</small><strong>hello@techhub.example</strong></div>
+        <div><small>PHONE</small><strong>+91 98765 43210</strong></div>
+        <div><small>HOURS</small><strong>Mon–Sat, 10 AM–8 PM</strong></div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-head"><h3>Your Cart</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn primary" id="checkoutBtn">Checkout</button></div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <footer>
+    <a class="logo" href="#home"><span>TECH</span>HUB</a>
+    <p>Demo DevOps portfolio project. Ready for Docker, AWS, Terraform, Kubernetes and monitoring.</p>
+    <p>© 2026 TechHub</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
