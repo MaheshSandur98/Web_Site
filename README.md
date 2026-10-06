@@ -41,3 +41,4 @@ docker run -p 8080:80 techhub-store
 
 ## Important
 All product names, prices, contact details and booking behavior are sample/demo data. Replace them before using this as a real commercial website.
+ this is web site project.
